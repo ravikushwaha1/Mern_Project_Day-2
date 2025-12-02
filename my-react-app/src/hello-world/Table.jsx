@@ -1,53 +1,36 @@
 import React from "react";
-import { containerStyle } from "./hello-world-style";
+import { styles } from "./hello-world-style";
 
 function HelloWorldComponent() {
+  const phoneData = [
+    { id: 1, name: "Ravi", phoneNumber: "9876543210" },
+    { id: 2, name: "Pritam", phoneNumber: "9123456780" },
+    { id: 3, name: "Amit", phoneNumber: "9000012345" },
+  ];
+
   return (
-    <div style={containerStyle}>
+    <div style={styles.container}>
       <h2>Hello World Component</h2>
       <p>This component is working properly!</p>
 
-      {/* Phone Number Table */}
-      <table
-        style={{
-          width: "100%",
-          borderCollapse: "collapse",
-          marginTop: "20px",
-        }}
-      >
+      <table style={styles.table}>
         <thead>
           <tr>
-            <th style={cellStyle}>Name</th>
-            <th style={cellStyle}>Phone Number</th>
+            <th style={styles.headerCell}>Name</th>
+            <th style={styles.headerCell}>Phone Number</th>
           </tr>
         </thead>
-
         <tbody>
-          <tr>
-            <td style={cellStyle}>Ravi</td>
-            <td style={cellStyle}>9876543210</td>
-          </tr>
-
-          <tr>
-            <td style={cellStyle}>Pritam</td>
-            <td style={cellStyle}>9123456780</td>
-          </tr>
-
-          <tr>
-            <td style={cellStyle}>Amit</td>
-            <td style={cellStyle}>9000012345</td>
-          </tr>
+          {phoneData.map((person) => (
+            <tr key={person.id}>
+              <td style={styles.dataCell}>{person.name}</td>
+              <td style={styles.dataCell}>{person.phoneNumber}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
   );
 }
-
-// Cell styling
-const cellStyle = {
-  border: "1px solid black",
-  padding: "10px",
-  textAlign: "left",
-};
 
 export default HelloWorldComponent;

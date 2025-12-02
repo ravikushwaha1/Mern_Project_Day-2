@@ -36,7 +36,7 @@ function App() {
 
         {/* Components */}
         <HelloWorldComponent />
-        <Table />
+        {/* <Table /> */}
       </main>
     </div>
   );

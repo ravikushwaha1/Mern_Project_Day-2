@@ -1,0 +1,35 @@
+.hello-container {
+  padding: 20px;
+  margin: 20px 0;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.phone-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.table-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table-cell {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-row:hover {
+  background-color: #e8f5e9;
+}
