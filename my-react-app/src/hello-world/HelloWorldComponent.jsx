@@ -11,7 +11,7 @@ function HelloWorldComponent() {
 
   return (
     <div className="hello-container">
-      <h2>Hello World Component</h2>
+      <h2>Hello World Ravi Component</h2>
       <p>This component is working properly!</p>
 
       <table className="phone-table">

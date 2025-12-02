@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { styles } from "./hello-world-style";
 
 function HelloWorldComponent() {
@@ -10,7 +10,7 @@ function HelloWorldComponent() {
 
   return (
     <div style={styles.container}>
-      <h2>Hello World Component</h2>
+      <h2>Hello World kushwaha Component</h2>
       <p>This component is working properly!</p>
 
       <table style={styles.table}>
@@ -21,6 +21,7 @@ function HelloWorldComponent() {
           </tr>
         </thead>
         <tbody>
+            
           {phoneData.map((person) => (
             <tr key={person.id}>
               <td style={styles.dataCell}>{person.name}</td>
@@ -33,4 +34,4 @@ function HelloWorldComponent() {
   );
 }
 
-export default HelloWorldComponent;
+export default HelloWorldComponent;*/
